@@ -1,0 +1,11 @@
+[Unit]
+Description=Enable some power saving options
+
+[Service]
+Type=oneshot
+ExecStart=/home/oxy/.local/bin/power-saving start
+ExecStop=/home/oxy/.local/bin/power-saving stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

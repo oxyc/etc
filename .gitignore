@@ -1,6 +1,8 @@
 *
 !.gitignore
 !abs.conf
+!/acpi/
+!acpi/*
 !adjtime
 !anacrontab
 !arch-release
@@ -47,6 +49,8 @@
 !man_db.conf
 !mkinitcpio.conf
 !motd
+!/modprobe.d/
+!modprobe.d/*
 !/modules-load.d/
 !modules-load.d/*
 !Muttrc
@@ -68,7 +72,13 @@
 !slim.conf
 !sudoers
 !sysctl.conf
+!/systemd/
+!/systemd/system/
+!systemd/system/*
 !thinkfan.conf
+!/udev/
+!/udev/rules.d/
+!udev/rules.d/*
 !/X11/
 !X11/*
 !/X11/xorg.conf.d/
