@@ -49,6 +49,9 @@
 !motd
 !/modules-load.d/
 !modules-load.d/*
+!Muttrc
+!Muttrc.dist
+!Muttrc.gpg.dist
 !/openldap/
 !openldap/*
 !pacman.conf
