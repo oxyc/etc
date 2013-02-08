@@ -73,6 +73,7 @@
 !sudoers
 !sysctl.conf
 !/systemd/
+!systemd/*
 !/systemd/system/
 !systemd/system/*
 !thinkfan.conf
