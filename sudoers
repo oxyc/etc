@@ -71,11 +71,12 @@
 ##
 root ALL=(ALL) ALL
 
-Cmnd_Alias POWEROFF = /sbin/halt, /sbin/poweroff, /sbin/reboot, /usr/sbin/pm-suspend
-Cmnd_Alias PACMAN = /usr/bin/pacman -S
+Cmnd_Alias POWER = /sbin/poweroff, /sbin/reboot
+Cmnd_Alias PMUTILS = /usr/sbin/pm-suspend, /usr/sbin/pm-hibernate
 Cmnd_Alias MOUNT = /bin/umount
+Cmnd_Alias MISC = /usr/sbin/powertop
 
-oxy ALL=(ALL) ALL, NOPASSWD: POWEROFF, PACMAN, MOUNT
+oxy ALL=(ALL) ALL, NOPASSWD: POWER, MOUNT, MISC, PMUTILS
 Defaults timestamp_timeout=360
 
 ## Uncomment to allow members of group wheel to execute any command
