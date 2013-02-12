@@ -1,6 +1,6 @@
 #!/bin/bash
 # Default acpi script that takes an entry for all actions
-
+PATH="$PATH:/home/oxy/.local/bin"
 case "$1" in
     button/power)
         case "$2" in
@@ -27,12 +27,12 @@ case "$1" in
             ACPI*|AC|ACAD|ADP0)
                 case "$4" in
                     00000000)
-                        ./home/oxy/.local/bin/power-saving start
                         logger 'AC unpluged'
+                        power-saving start
                         ;;
                     00000001)
-                        ./home/oxy/.local/bin/power-saving stop
                         logger 'AC pluged'
+                        power-saving stop
                         ;;
                 esac
                 ;;
@@ -47,9 +47,11 @@ case "$1" in
                 case "$4" in
                     00000000)
                         logger 'Battery online'
+                        power-saving start
                         ;;
                     00000001)
                         logger 'Battery offline'
+                        power-saving stop
                         ;;
                 esac
                 ;;
