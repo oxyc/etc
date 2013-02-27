@@ -74,7 +74,7 @@ root ALL=(ALL) ALL
 Cmnd_Alias POWER = /sbin/poweroff, /sbin/reboot
 Cmnd_Alias PMUTILS = /usr/sbin/pm-suspend, /usr/sbin/pm-hibernate
 Cmnd_Alias MOUNT = /bin/umount
-Cmnd_Alias MISC = /usr/sbin/powertop
+Cmnd_Alias MISC = /usr/sbin/powertop, /usr/bin/wifi-menu, /home/oxy/.local/bin/power-saving
 
 oxy ALL=(ALL) ALL, NOPASSWD: POWER, MOUNT, MISC, PMUTILS
 Defaults timestamp_timeout=360
