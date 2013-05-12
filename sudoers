@@ -75,8 +75,9 @@ Cmnd_Alias POWER = /sbin/poweroff, /sbin/reboot
 Cmnd_Alias PMUTILS = /usr/sbin/pm-suspend, /usr/sbin/pm-hibernate
 Cmnd_Alias MOUNT = /bin/umount
 Cmnd_Alias MISC = /usr/sbin/powertop, /usr/bin/wifi-menu, /home/oxy/.local/bin/power-saving
+Cmnd_Alias HTTPD = /usr/sbin/apachectl
 
-oxy ALL=(ALL) ALL, NOPASSWD: POWER, MOUNT, MISC, PMUTILS
+oxy ALL=(ALL) ALL, NOPASSWD: POWER, MOUNT, MISC, PMUTILS, HTTPD
 Defaults timestamp_timeout=360
 
 ## Uncomment to allow members of group wheel to execute any command
