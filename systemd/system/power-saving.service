@@ -1,11 +1,12 @@
 [Unit]
-Description=Enable some power saving options
+Description=Set correct power-saving options on startup
+Before=graphical.target
 
 [Service]
-Type=oneshot
-ExecStart=/home/oxy/.local/bin/power-saving start
-ExecStop=/home/oxy/.local/bin/power-saving stop
+ExecStart=/home/oxy/.local/bin/power-saving
+ExecStop=/home/oxy/.local/bin/power-saving
 RemainAfterExit=yes
+Type=forking
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
