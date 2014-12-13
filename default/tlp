@@ -114,7 +114,7 @@ RUNTIME_PM_ON_AC=on
 RUNTIME_PM_ON_BAT=auto
 
 # Set to 0 to disable/1 to enable usb autosuspend feature
-USB_AUTOSUSPEND=1
+#USB_AUTOSUSPEND=1
  
 # Devices from the following list are excluded from usb autosuspend
 # (separate with spaces). Use lsusb to get the id's.
